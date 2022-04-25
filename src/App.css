@@ -1,0 +1,36 @@
+
+
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 5rem;
+  line-height: 3.7rem;
+  text-align: center;
+  pointer-events: none;
+  color: black;
+}
+
+.input-group{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 5rem;
+}
+
+input{
+  height: 30px;
+  width: 40vw;
+  margin-top: 10px;
+}
+
+/*.img_div{
+  height: 40px;
+  width: 40px;
+}*/
