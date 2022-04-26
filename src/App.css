@@ -30,7 +30,12 @@ input{
   margin-top: 10px;
 }
 
-/*.img_div{
-  height: 40px;
-  width: 40px;
-}*/
+.img_div{
+  padding: 30px;
+}
+
+img{
+  height: 300px !important;
+  width: 300px !important;
+  padding: 10px;
+}
