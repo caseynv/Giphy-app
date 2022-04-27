@@ -7,10 +7,10 @@ function Input() {
 
     const [gifname, setgifname] = useState('');
     const [gif, setgif] = useState([]);
-
+    
         async function handleSubmit(event) {
         event.preventDefault();
-        await axios.get(`https://api.giphy.com/v1/gifs/search?q=${gifname}&api_key=3ZT8IGYuq0IQP1v19SAGm1RNkL5L5FUI`)
+        await axios.get(`https://api.giphy.com/v1/gifs/search?q=${gifname.replace(/\s/g, '+')}&api_key=3ZT8IGYuq0IQP1v19SAGm1RNkL5L5FUI`)
         .then((response) => {
             let resp = response.data.data
             setgif(resp)
@@ -19,7 +19,7 @@ function Input() {
         })
     };
     useEffect (() => {
-        handleSubmit()}, []
+        handleSubmit()}
     )
 
     return (
